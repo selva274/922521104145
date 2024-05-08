@@ -18,7 +18,7 @@ fetch();
     <div>
       {
         data.map((pro)=>{
-          return <div>
+          return <div key={pro.id}>
             <Product Product={pro}/>
           </div>
         })

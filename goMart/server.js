@@ -14,10 +14,10 @@ app.get("/test",(req,res)=>{
     res.send(productData)
 })
 
-app.get("/test/:companyname",(req,res)=>{
-    const companyName=req.params.companyname;
-    const company=productData[0].companyName;
-    res.send(company);
+app.get("test/:price",(req,res)=>{
+    var price=req.params.price;
+    const result= productData[0].AMG.find((price)=>price>=1000)
+    console.log(result);
 })
 
 if(process.env.NODE_ENV==='development'){
