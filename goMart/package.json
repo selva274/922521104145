@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon server.js"
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently -c red,green -n server,client  \"npm run server\" \"npm run client\""
   },
   "author": "selvakumar  d",
   "license": "ISC",
   "dependencies": {
+    "concurrency": "^0.1.4",
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-graphql": "^0.12.0"

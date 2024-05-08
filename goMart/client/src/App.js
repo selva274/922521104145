@@ -7,13 +7,13 @@ const App = () => {
 
   const fetch=()=>{
     axios.get("http://localhost:3001/test")
-    .then((d)=>setData(d.data));
+    .then((d)=>setData(d.data[0].AMG));
   }
 
   useEffect(()=>{
 fetch();
   },[])
-  console.log(data);
+
   return (
     <div>
       {

@@ -1,4 +1,7 @@
-[            {"productName":"Phone 1","price":1000,"rating":3.8,"discount":50,"availability":"yes"},
+[        
+    {
+        "AMG":[
+            {"productName":"Phone 1","price":1000,"rating":3.8,"discount":50,"availability":"yes"},
             {"productName":"Phone 2","price":2000,"rating":3.8,"discount":50,"availability":"yes"},
             {"productName":"Phone 3","price":3000,"rating":3.8,"discount":50,"availability":"yes"},
             {"productName":"Phone 4","price":4000,"rating":3.8,"discount":50,"availability":"yes"},
@@ -7,7 +10,8 @@
             {"productName":"Phone 7","price":6000,"rating":3.8,"discount":50,"availability":"yes"},
             {"productName":"Phone 8","price":7000,"rating":3.8,"discount":50,"availability":"yes"},
             {"productName":"Phone 9","price":8000,"rating":3.8,"discount":50,"availability":"yes"},
-            {"productName":"Phone 10","price":11000,"rating":3.8,"discount":50,"availability":"yes"}       
-    
+            {"productName":"Phone 10","price":11000,"rating":3.8,"discount":50,"availability":"yes"}      
+        ]
+    }
  
 ]
